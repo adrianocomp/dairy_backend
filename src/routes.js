@@ -28,5 +28,6 @@ routes.get('/testes/index', TesteController.index);
 routes.delete('/testes/delete/:id', TesteController.delete);
 routes.get('/testes/index_producer', TesteController.index_producer);
 routes.post('/testes/update/:id', TesteController.update_teste);
+routes.get('/testes/:id', TesteController.get_teste);
 
 module.exports = routes;

@@ -14,6 +14,16 @@ module.exports = {
         return response.json(testes);
     },
 
+    async get_teste(request, response){
+        
+        const  teste_id  = request.params.id;
+
+        const userid = request.headers.authorization;
+        
+        const teste = await Teste.findOne({_id: teste_id});
+        return response.json(teste);
+    },
+
     async index_producer(request, response){
         
         const {producername} = request.headers;
