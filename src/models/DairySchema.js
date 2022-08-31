@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const User = require('./UserSchema');
-
+require('dotenv').config()
 
 const DairySchema = new mongoose.Schema({
     name: String,

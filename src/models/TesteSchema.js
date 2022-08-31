@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const User = require('./UserSchema');
-
-
+require('dotenv').config()
 const TesteSchema = new mongoose.Schema({
     name: String,
     date: {type: Date},
